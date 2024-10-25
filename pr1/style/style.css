@@ -1,0 +1,114 @@
+@font-face {
+    font-family: nexa;
+    src: local(Nexa);
+    outline: none;
+    box-sizing: border-box;
+}
+*{
+    margin: 0;
+    padding: 0;
+    color:white;
+    font-family: 'Nexa';
+}
+body{
+    background: #121212;
+;
+    ;
+    font-family: nexa;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.header{
+    text-align: center;
+    width: 50%;
+}
+
+.mato{
+    font-size: 48px;
+    font-weight: bold;
+}
+.Beyond{
+    color:#483285
+}
+.small_grey_font{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 16px;
+    color:#fff;
+}
+
+.input-data{
+    height: 60px;
+    position: relative;
+}
+
+.input-data input{
+    height: 100%;
+    width: 100%;
+    border:none;
+    font-size: 18px;
+    background-color: #121212;
+    ;
+}
+.input-data input:focus ~ label,
+.input-data input:valid ~ label{
+    transform: translateY(-35px);
+    font-size: 15px;
+    color: grey;
+}
+.input-data label{
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    color: #fff;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+.input-data .underline{
+    position: absolute;
+    height: 2px;
+    width: 96%;
+    padding-left: 5px;
+    padding-right: 5px;
+    bottom: 0;
+}
+.input-data .underline:before{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: #fff;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease;
+}
+.input-data input:focus ~ .underline:before,
+.input-data input:valid ~ .underline:before{
+    transform: scaleX(1);
+}
+
+.button{
+    font-size: 20px;
+    margin-top: 15px;
+    text-decoration: none;
+}
+
+.button:link{
+    color: #fff;
+    
+}
+.button:hover{
+    color:#483285;
+    cursor: pointer;
+}
+.button:visited{
+    color: #353652;
+}
