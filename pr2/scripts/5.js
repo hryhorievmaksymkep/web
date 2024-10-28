@@ -13,6 +13,8 @@ let orders = [
     }
 ];
 
+console.log(orders);
+
 function getTotalSpentByCustomer(){
     let name = prompt("Введіть ім'я покупця:");
     let customer = orders.filter(order => order.customer.name === name);
